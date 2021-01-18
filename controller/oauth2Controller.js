@@ -1,6 +1,8 @@
 const baseController = require('controllers/base.js');
 const yapi = require('yapi.js');
-const http = require('http')
+// TODO 如果gitlab部署在了https的服务器上，这个要使用https
+// const http = require('https');
+const http = require('http');
 
 class oauth2Controller {
     constructor(ctx){
